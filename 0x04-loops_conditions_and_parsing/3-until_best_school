@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# displays Best School 10 times.
+# This script is displaying "Best School" 10 times
 
-COUNTER=10
-until [ $COUNTER -lt 1 ]
+COUNT=0
+until [ $COUNT -gt 9 ]
 do
-    echo "Best School"
-    let COUNTER-=1
+	echo "Best School"
+	COUNT=$(( COUNT + 1 ))
 done
